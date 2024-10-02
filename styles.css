@@ -8,9 +8,14 @@
     --clr-neutral-900:hsl(212, 21%, 14%);
     --clr-neutral-400:hsl(228, 12%, 48%);
     --clr-neutral-100: hsl(0, 0%, 100%);
-    
+  
+    --ff-accent:"Fraunces", serif;
+    --ff-base:"Montserrat",sans-serif;
+
     --fw-regular:500;
     --fw-bold:700;
+
+  
 
 }
 
@@ -52,4 +57,46 @@ h1,
 h2,
 h3 {
   line-height: 1;
+}
+
+/* General styling */
+body{
+  font-family: var(--ff-base);
+  font-weight: var(--fw-regular);
+  font-size: 0.875rem;
+  color: var(--clr-neutral-400);
+  background-color: var(--clr-secondary-200);  
+
+  /* for this project only */
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+
+/* utilities */
+.flex-group{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* product styles */
+.product{
+  --content-padding:1.5rem;
+  --content-spacing:1rem;
+  background-color: var(--clr-neutral-100);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.product__content{
+  display: grid;
+  gap: var(--content-spacing);
+  padding: var(--content-padding);
+}
+
+.product__category{
+  letter-spacing: 6px;
+  text-transform: uppercase;
+
 }
