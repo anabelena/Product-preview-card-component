@@ -11,11 +11,9 @@ Users should be able to:
 
 ## Screenshot
 
-![](./design/desktop-preview.jpg)
-
 ## Links
 
-- Solution URL:
+- Solution URL
 - Live Site URL:
 
 ## My process
